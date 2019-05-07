@@ -68,10 +68,12 @@ z-index: 5;
 
     aside{
       height: 100%;
-      position: fixed;
-          max-width: 150px;
+       position: fixed;
+      float: left;
+          width: 150px;
   
   background-color: rgba(0,0,0,0.0);
+  z-index: -1;
     }
 
     .nav-link{
@@ -98,7 +100,7 @@ z-index: 5;
   <body>
     <!--<div id="banner" class=" text-center"><p>BANNER</p></div>-->
     
-    <!-- Navegacion -->
+    <!-- Navs -->
     <nav class="h-nav navbar navbar-expand navbar-light dark-gray ">
       <a class="navbar-brand nav_active px-2" href="#">Main page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,9 +123,9 @@ z-index: 5;
         </ul>
       </div>
     </nav>
-    <div class="bg-secondary">
-      <aside class="">
-        <nav id="navbar-example3" class="v-nav navbar">
+    <div class="bg-secondary d-none d-md-block">
+      <aside class="bg-secondary">
+        <nav id="navbar-example3" class=" v-nav navbar">
           <nav class="nav nav-pills flex-column">            
               <a class="nav-link" href="#whatisars">What is ARS</a>
               <a class="nav-link" href="#goals">Main goals</a>
@@ -132,9 +134,12 @@ z-index: 5;
             <a class="nav-link" href="#thankyou">Thank you</a>
           </nav>
         </aside>
+        </div>
 
+        <!-- Actual page -->
         <main class="bg-white py-5">
-          <div class="text-center pt-5 mb-5">
+          <section class="mb-5">
+          <div class="text-center pt-5 mb-5 mt-5">
             <h1 class="">Autosport Racing System</h1>
             <span>The cool subtitle</span>
           </div>
@@ -185,8 +190,15 @@ z-index: 5;
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis aptent, velit curae viverra diam orci dictum nibh ultrices nullam, ullamcorper natoque torquent faucibus augue pulvinar porttitor tellus. Ultricies interdum natoque velit id cursus eros hendrerit, eleifend commodo pretium ad gravida aliquam, sapien curae proin enim vulputate mauris. Magna suspendisse duis dui quam non sed in ornare quis, morbi conubia imperdiet praesent sapien primis a integer aliquet, sagittis eros fermentum maecenas tincidunt torquent taciti lectus.
             </p>
           </article>
-        </div>
-        <footer class="bg-dark container-fluid py-5">
+          <article class="w-100 mx-auto">
+            <h2 id="thankyou" class="text-center mb-5 mt-5">Thank you</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit facilisis aptent, velit curae viverra diam orci dictum nibh ultrices nullam, ullamcorper natoque torquent faucibus augue pulvinar porttitor tellus. Ultricies interdum natoque velit id cursus eros hendrerit, eleifend commodo pretium ad gravida aliquam, sapien curae proin enim vulputate mauris. Magna suspendisse duis dui quam non sed in ornare quis, morbi conubia imperdiet praesent sapien primis a integer aliquet, sagittis eros fermentum maecenas tincidunt torquent taciti lectus.
+            </p>
+          </article>
+
+            </section>
+      </main>
+              <footer class="bg-dark container-fluid py-5">
           <div class="row mx-5 text-white">
             <div class="col-4 text-right">
               <p>- Example</p>
@@ -198,7 +210,6 @@ z-index: 5;
             </div>
           </div>
         </footer>
-      </main>
     </body>
     <script type="text/javascript">
       $('.carousel').carousel()
