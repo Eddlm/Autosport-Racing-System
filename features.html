@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+    <title>ARS - Main</title>
+    <meta name="description"content="">
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <style>
+  body{
+  background: rgba(59, 59, 59);
+  max-width: 1280px;
+  margin: auto;
+  }
+  #banner {
+  height: 100px;
+  background-color: white;
+  background-image: url(img/banner.jpg);
+  background-position: 0% 28%;
+  background-size:cover;
+  }
+  .h-nav {
+  
+  font-size: 1.2em;
+  position: fixed;
+  width: 1280px;
+  z-index: 5;
+  transition: height 2s;
+  }
+  .h-nav:hover
+  {
+  }
+  .v-nav{
+  margin-top: 50px;
+  }
+  .nav_active{
+  background-color: rgba(0,0,0,0.08);
+  }
+  .carousel {
+  margin: auto;
+  }
+  aside a{
+  color: white;
+  }
+  aside a:hover{
+  color:lightgray;
+  }
+  aside{
+  height: 100%;
+  position: fixed;
+  float: left;
+  width: 150px;
+  
+  background-color: rgba(0,0,0,0.0);
+  z-index: -1;
+  }
+  .nav-link{
+  padding-left:6px;
+  padding-right:4px;
+  padding-top:4px;
+  padding-bottom:4px;
+  
+  }
+  main{
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 150px;
+  }
+  .dark-gray{
+  background-color:rgba(200,200,200,1);
+  }
+  .nav-item .nav-link:hover{
+  background-color: rgba(0,0,0,0.2);
+  }
+  </style>
+  <body>
+    <!--<div id="banner" class=" text-center"><p>BANNER</p></div>-->
+    
+    <!-- Navs -->
+    <nav class="h-nav navbar navbar-expand navbar-light dark-gray ">
+      <a class="navbar-brand nav_active px-2" href="#">Main page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="theai.html">The AI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bg-secondary d-none d-md-block">
+      <aside class="bg-secondary">
+        <nav id="navbar-example3" class=" v-nav navbar">
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#whatisars">What is ARS</a>
+            <a class="nav-link" href="#goals">Main goals</a>
+            
+            <a class="nav-link" href="#thewebsite">The website</a>
+            <a class="nav-link" href="#thankyou">Thank you</a>
+          </nav>
+        </aside>
+      </div>
+      <!-- Actual page -->
+      <main class="bg-white py-5">
+        <section class="mb-5">
+          <div class="text-center pt-5 mb-5 mt-5">
+            <h1 class="">Features</h1>
+            <span>What makes it worth it.</span>
+          </div>
+          <article class="w-100 mx-auto">
+            <h2 id="thewebsite" class="text-center mb-5 mt-5">Custom Routes</h2>
+            <p>
+              ARS ditches the waypoint-style races in favor of a Route system, commonly found in actual racing games. The tracks are actual routes, which don't neccesarily follow ingame roads or any paths. These routes can go anywhere anywhere and travel around any solid surface, including props! You can perfectly create sky-high tracks with props. It just works.
+            </p>
+            <p>
+              The route system allows for the tracks to be more precisely defined than a waypoint-following system, so you have more control to where the racers are allowed to go and where they arent. Specially useful in technical routes like Rally stages!
+            </p>
+          </article>
+          <article class="w-100 mx-auto">
+            <h2 id="thewebsite" class="text-center mb-5 mt-5">Track Creator</h2>
+            <p>
+              Of course, you can create your own.
+            </p>
+            <p>
+              The Track creator allows players to make new tracks with custom routes and props, packaged in the most intuitive interface I could manage. You can create both closed tracks or point to point ones, and they can feature automatic trackside props placement, or flares if you prefer.
+            </p>
+            <p>
+              The tracks can be created on any place, be it within the island, in a prop-track in the sky, or in add-on lands. They all work the same. ARS' AI does not need vanilla pathfinding, so they can race on just about any place you want them to.
+            </p>
+          <article class="w-100 mx-auto">
+            <h2 id="thewebsite" class="text-center mb-5 mt-5">Scratch-made AI</h2>
+            <p>
+              The racers in ARS make use of a scratch-made AI behavior specifically coded, by me, for this script. It replaces the original driving behavior that GTAV's AI features.
+            </p>
+            <p>
+              This AI is very well capable of taking any vehicle and race it down any track, making use of a wide range of sub-behaviors and analysis to take the corners at just the right speed, judge when to overtake and how, what counter maneuvers to execute to maintain control of the car in any event of loss of control, etc.
+            </p>
+            <p>
+              They're also able to maintain a decent order in a tightly packed grid and dynamically adjust throttle and braking inputs to combat wheelsspin and brake locking. 
+            </p>
+          </article>
+          <article class="w-100 mx-auto">
+            <h2 id="thewebsite" class="text-center mb-5 mt-5">Custom vehicles and Add-On Support</h2>
+            <p>
+              Much like my other racing projects, ARS is able to save vehicle builds to spawn in a race later on. This time they use a tag/discipline system to know what kind of car to spawn.
+            </p>
+            <p>
+              As always, the script can make use of any Add-On vehicle, and won't crash if you lack a vehicle that's referenced in the script's files. Unavailable models will be simply ignored.
+            </p>
+          </article>
+          </article>
+        </section>
+      </main>
+      <footer class="bg-dark container-fluid py-5">
+        <div class="row mx-5 text-white">
+          <div class="col-4 text-right">
+            <p>- Example</p>
+          </div>
+          <div class="col-4 text-left">
+          </div>
+          <div class="col-4 text-left">
+            <p>- Example</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+    <script type="text/javascript">
+    $('.carousel').carousel()
+    </script>
+  </html>
