@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge,chrome=1">
+    <title>ARS - Main</title>
+    <meta name="description"content="">
+    <meta name="viewport"content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <style>
+    body{
+      background: rgba(59, 59, 59);
+      max-width: 1280px;
+      margin: auto;
+    }
+
+    #banner {
+
+      height: 100px;
+      background-color: white;
+      background-image: url(img/banner.jpg);
+    background-position: 0% 28%;
+      background-size:cover;
+    }
+    .h-nav {
+      
+            font-size: 1.2em;
+position: fixed;
+      width: 1280px;
+
+z-index: 5;
+  transition: height 2s;
+
+    }
+
+    .h-nav:hover
+    {
+
+
+
+    }
+
+
+    .v-nav{
+      margin-top: 50px;
+
+    }
+    .nav_active{
+      background-color: rgba(0,0,0,0.08);
+    }
+  .carousel {
+  margin: auto;
+  }
+  aside a{
+  color: white;
+  }
+
+
+
+  aside a:hover{
+
+    color:lightgray;
+  }
+
+    aside{
+      height: 100%;
+       position: fixed;
+      float: left;
+          width: 150px;
+  
+  background-color: rgba(0,0,0,0.0);
+  z-index: -1;
+    }
+
+    .nav-link{
+    padding-left:6px;
+    padding-right:4px;
+    padding-top:4px;
+    padding-bottom:4px;
+    
+    }
+  main{
+  padding-left: 10%;
+  padding-right: 10%;
+        margin-left: 150px;
+
+  }
+  .dark-gray{
+    background-color:rgba(200,200,200,1);
+  }
+  .nav-item .nav-link:hover{
+      background-color: rgba(0,0,0,0.2);
+  }
+
+  </style>
+  <body>
+    <!--<div id="banner" class=" text-center"><p>BANNER</p></div>-->
+    
+    <!-- Navs -->
+    <nav class="h-nav navbar navbar-expand navbar-light dark-gray ">
+      <a class="navbar-brand nav_active px-2" href="index.html">Main page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="theai.html">The AI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">How to Play</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="bg-secondary d-none d-md-block">
+      <aside class="bg-secondary">
+        <nav id="navbar-example3" class=" v-nav navbar">
+          <nav class="nav nav-pills flex-column">            
+              <a class="nav-link" href="#whatisars">What is ARS</a>
+              <a class="nav-link" href="#goals">Main goals</a>
+            
+            <a class="nav-link" href="#thewebsite">The website</a>
+            <a class="nav-link" href="#thankyou">Thank you</a>
+          </nav>
+        </aside>
+        </div>
+
+        <!-- Actual page -->
+        <main class="bg-white py-5">
+          <section class="mb-5">
+          <div class="text-center pt-5 mb-5 mt-5">
+            <h1 class="">How to Play</h1>
+            <span>It is not as intuitive as it should.</span>
+          </div>
+ 
+          <article class="w-100 mx-auto">
+            <h2 id="whatisars" class="text-center mb-5">Main Menu</h2>
+            <div class=" text-center my-4"><img src="img/menu.jpg" class="border rounded bg-light p-2 w-75"></div>
+            <p>The main menu of ARS is brought up at any moment using the <strong>Sprint + Interact keys, Shift+E on keyboard</strong>.</p>
+            <p>This menu allows you to select a track, the lap number, the opponent vehicles, and how many opponents will participate in the race.</p>
+
+            <p><li>The first item is the <strong>Track Selection</strong>. It will let you input a few keywords, separated by spaces. These will be used to search for tracks that fit the keyword criteria. On the same item you can select the current filtered track with the arrow keys.</li></p>
+
+            <p><li><strong>Disciplines</strong> lets you input some keywords to filter what cars will be summoned. <code>muscle street</code> will, for example, select any car which is considered a Muscle car, <strong>or</strong> has a <code>street</code> tag on it.<br>The input has a few modifiers to better choose what kind of vehicles you want summoned.
+              <ul>
+                <li><code>+tag</code> will mean that tag is <strong>required.</strong> All cars summoned need to have this tag.</li>
+                <li><code>-tag</code> will mean that tag is <strong>prohibited.</strong> All cars summoned cannot have this tag.</li>
+                <li><code>tag</code> will mean that tag is <strong>optional.</strong> If a car contains this tag, it will be included.</li>
+              </ul>
+              You can freely include as many tags as you want, with one modifier on each, or none.
+                </li></p>
+            <p><li><strong>Grid Size</strong> allows you to decide how many AI racers will participate in the race. You can enter a number here, or use the arrow keys to modify it.</li></p>
+            <p><li><strong>Laps</strong> does the same, but regarding how many laps the race will consist of. You can enter a number here, or use the arrow keys to modify it too.</li></p>
+            <p><li><strong>Quick Start</strong> loads the race itself. It will first load the track, then the vehicles, and place all of you in the grid.</li></p>
+
+            <p>You can participate in the races by simply being in a vehicle when you hit Start. If you're on foot, you'll not participate.</p>
+            
+          </article>
+            </section>
+      </main>
+              <footer class="bg-dark container-fluid py-5">
+          <div class="row mx-5 text-white">
+            <div class="col-4 text-right">
+              <p>- Example</p>
+            </div>
+            <div class="col-4 text-left">
+            </div>
+            <div class="col-4 text-left">
+              <p>- Example</p>
+            </div>
+          </div>
+        </footer>
+    </body>
+    <script type="text/javascript">
+      $('.carousel').carousel()
+    </script>
+  </html>
