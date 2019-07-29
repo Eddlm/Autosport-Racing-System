@@ -2,6 +2,12 @@
 max-width: 970px;
 }
 
+.bg-gray
+{
+
+	background-color: #ccc;
+}
+
 
 a {
 	color: 	#29d100;
