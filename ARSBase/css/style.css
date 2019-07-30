@@ -1,0 +1,29 @@
+#width {
+max-width: 970px;
+}
+
+.bg-gray
+{
+
+	background-color: #ccc;
+}
+
+
+a {
+	color: 	#1ba303;
+}
+a:hover {
+	color: 	#1ba303;
+}
+
+
+.nav-link.active.show {
+
+	background-color:	#1ba303;
+}
+
+.nav-link.active {
+
+	background-color: rgba(0,0,0, 0.02);
+}
+
