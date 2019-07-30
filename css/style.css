@@ -8,7 +8,11 @@ max-width: 970px;
 	background-color: #ccc;
 }
 
+.bg-lightgray
+{
 
+	background-color: #eee;
+}
 a {
 	color: 	#1ba303;
 }
@@ -24,6 +28,6 @@ a:hover {
 
 .nav-link.active {
 
-	background-color: rgba(0,0,0, 0.02);
+	background-color: rgba(0,0,0, 0.1);
 }
 
