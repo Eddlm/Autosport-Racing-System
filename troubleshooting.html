@@ -41,26 +41,32 @@
 			<div class="row p-3">
 				
 				<div class="nav flex-column nav-pills col-md-2 d-none d-md-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">???</a>
-					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">???</a>
-					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">???</a>
-					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">???</a>
+					<a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Known Bugs</a>
+					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Known Issues</a>
 				</div>
 				<div class="tab-content  col-md-10" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
+						<div class="text-center my-5">
+						<h1 class="">Known Bugs</h1>
+						<small>Code issues that may lead to crashes or unwanted behavior.</small>
+						</div>
+						<ul>
+							<li><strong>Forward slashes <code>/</code> are not welcome in a vehicle/track filename.</strong>The script may crash when creating the new file, resulting in an empty file. Beware of the Kuruma T/A and friends.</li>
+							<li><strong>The script may crash if there's a corrupted .xml track/vehicle file.</strong> Until you remove that said file, the script will keep crashing as soon as it loads. Refer to ARS/Log.log to see which file is causing trouble.</li>
+							<li><strong>The AI racers might not steer or throttle properly.</strong> You're then using an old game version and the script cannot access the memory offsets it needs to, to control the cars. You need to input the correct memory offsets for your game version in ARS/MemOffsets.ini.</li>
+						</ul>
 					</div>
 					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-					</div>
-					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-					</div>
-					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
+						<div class="text-center my-5">
+						<h1 class="">Known Issues</h1>
+						<small>These are not <i>bugs</i>, but a quality problem, result of the script not being polished, nor finished.</small>
+						</div>
+						<ul>
+							<li><strong>The Discipline tagging system may include unwanted cars. </strong>If you summon 'super' vehicles, a Super Diamond may join the party. The script doesn't look up for vehicle classes specifically, yet.<br> Fow now, you can prevent this by blacklisting the unwanted vehicles with a <code>-vehicle</code>, or changing the vehicle's.xml tags, or even removing the vehicle.xml file if you don't even like the vehicle.</li>
+							<li><strong>As you finish, the race ends abruptly.</strong> There's no real post-race behavior coded in yet.</li>
+							<li><strong>On maps where the track is fully composed of props, you may fall off to the real ground as the race ends.</strong> </li>
+							<li><strong>Some tracks are not properly detailed and don't feature racing lines.</strong> The gameplay doesn't suffer, but the experience will. <br>If you feel like so, you can fix this yourself there and then using the ingame track editor (RacingLineEdit/PropEdit in debugmode).</li>
+						</ul>
 					</div>
 				</div>
 			</div>

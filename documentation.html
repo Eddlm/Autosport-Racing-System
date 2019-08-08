@@ -5,8 +5,7 @@
 		<title>Autosport Racing System</title>
 		<meta name="description" content="The Website for the ARS GTAV Script.">
 		<meta name="author" content="Edd	">
-				<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -44,81 +43,91 @@
 					<a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">The Track</a>
 					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">The AI</a>
 					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">The vehicles</a>
-
+					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
 				</div>
-				<div class="tab-content  col-md-10" id="v-pills-tabContent">
+				<div class="tab-content  col-md-10 container-fluid" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
+						<div class="text-center pt-5 mb-5 mt-5">
+							<h1 class="">The track</h1>
+							<span>Not yet.</span>
+						</div>
 					</div>
 					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-
-        <section class="mb-5">
-          <div class="text-center pt-5 mb-5 mt-5">
-            <h1 class="">The AI</h1>
-            <span>The meat of ARS.</span>
-          </div>
-          <p class="my-5">
-            ARS's AI is actually what took me a year to code and rise up to a competent status.
-          </p>
-          <article class="w-100 mx-auto">
-            <h3>The Crunch</h3>
-            <p>
-              ARS' AI spans over 2000 lines of code. All of it deals with a wide variety of calculations and problem solving logic, from preemptive braking behavior to racer-to-racer interaction. The full behavior is, however, crunched down to three simple imputs - Throttle, Brake and Steering.
-            </p>
-            <p>
-              Nothing more. The racers are only able to interact with the car as only a human would, and do not use cheats to keep the vehicle under control or apply forces to help with the braking or conering. All they have to tame the beasts they sit on, is a steering wheel and the pedals.
-            </p>
-            <p>
-              This means the code is focused on making them as smart as possible, as they're in a level playing field with the player, and the player always wins a mind match. 
-            </p>
-            <h3>Pathfinding</h3>
-            <p>
-              The racers make use of the track's info to know where to go and steer properly. They mainly use a direction vector, gotten from the track's info, and steer towards it, with a few logic here and there to help them recover from crashes and reverse properly, always attempting to right themselves into the track. Their steering is inverted when their relative angle to the track is over 90º degrees, for example, so they recover themselves in a very simple, but very efficient way.
-            </p>
-            <h3>General Speed Control</h3>
-            <p>
-              Racers start attempting to reach an 'infinite' <i>(500mph)</i> speed. The information they gather from the track and their own context limits that to a more context-appropiate speed, and after all of the checks have adjusted it, then they throttle or brake towards it.
-            </p>
-
-            <p>
-              The track itself, composed of 3D Vector positions, lines up creating a closed shape, and generates some information that the Racers make use of to judge their speed. Separated by exactly one meter, each node's direction is compared to the next and from that, an angle is generated and stored. So, for any point in the track, the Racers know the precise direction change each corner implies. 
-            </p>
-            <p> 
-              With that information, along their own confidence (judged from the vehicle's grip) they make up a rough ideal speed for the relevant nodes, that they attempt to keep close at if possible. This is how the AI is able to maintain a proper speed for any corner, no matter how long or complex it is.
-            </p>
-            <p> 
-              A few sanity checks are in place so the Racers use some common sense, and don't blindly follow that calculated, thus theoretical, ideal cornering speed. They keep an eye on their actual position in the track and how well they're cornering, comparing their deviation from the track's center and their own traction curve compared to the angle of the current corner. A lower traction curve means they're taking a wider curve than the corner, which will likely result in them ending out of the track. As this happens, they can throttle down if they judge so.
-            </p>
-            <p>This is not enough however, as a wider traction curve means nothing if they're actually pointing towards the inside of the corner. Only when they're actively sliding away to the outside, they judge neccesary to react and slow down.</p>
-            <h3>Braking points & Gradual speed reduction</h3>
-            <p>The AI keeps track of any future corners whose ideal speed is so low, they should be braking in advance.</p>
-            <p>If such a corner is found, they will track it and keep a very fine eye on their own speed relative to that corner's ideal speed, and will slow down gradually before arriving, making sure they have enough time to actually slow down to that point</p>
-            <p>The AI doesn't slow down in a linear relationship from their speed to the corner speed based on distance - this makes them brake way too soon and its not how people attack corners. Instead, the racers opt for a more aggresive behavior, taking the bulk of the slow down at the last metters.</p>
-            <p>This  is not easy to achieve - the racer has to know the braking capabilities of his ride very well. Its not just a matter of braking power, but also grip, weight transfer, actual surface grip of the corner compared to their current grip, etcetera.</p>
-            <p>Because of this, the AI doesn't even attempt to crunch numbers and try to resolve the best speed-at-distance relationship accounting for every single variable in the enviroment. Instead, they learn the car's capabilities as they go, starting on the safe side and building up.</p>
-            <p>AI keeps an eye on how far over the corner speed they are when they arrive there, to correct any overshoot due to high aggresiveness when braking. But they also keep an eye on how well they're able to keep up with the gradual ideal speed slow down to the corner. If they're having an easy time keeping up, maybe they should brake a bit later. And that, they do.</p>
-            <p>This covers both over-shooting and under-shooting a corner and generally works in cooperation with the cornering speed analysis to maintain a coherent behavior across most contexts.</p>
-            <h3>Loss of control</h3>
-            <p>GTAV's arcadey handling makes it hard to really lose control over a vehicle, but its still there. And, more realistic handling mods (which I prefer) do make vehicle stability and controll loss a bigger part of the experience. Thus, the AI has a few tricks up its sleeve to make sure they remain in control of the machine.</p>
-            <h5>Oversteer</h5>
-            <p>Oversteer is tackled with, you guessed it, an appropiate countersteer maneuver. The AI has a rough idea of what oversteer is - in their eyes, oversteer is the moment when the car is rotating faster than they want it to.</p>
-            <p>Depending on the difference between what rotation speed they want and what they experience, they can sightly steer a bit less, all the way up to a full 180º steering wheel countersteer to the other side. As soon as the oversteer check judges there isn't oversteer anymore, the AI stops trying.</p>
-            <h5>Understeer</h5>
-            <p>Understeer implies that the car is not following the steer input. This is judged over a period of time. If the AI notices this, they will throttle down.</p>
-            <h5>Side Slide</h5>
-            <p>A vehicle sliding is a cool sight, but its not really a sign of stability. The AI doesn't actively try to stop a slide (and they'll happily drift an entire corner if it does the job), but they do attempt to prevent it from going worse if they notice they're in one. </p>
-            <p>Counter-Oversteer behavior and Slide behavior are tied, because a slide might come from an oversteer moment. Thus, the slide is usually caught by the above behavior, then handled by this one.</p>
-          </article>
-          
-        </section>
+						
+							<div class="text-center pt-5 mb-5 mt-5">
+								<h1 class="">The AI</h1>
+								<span>The meat of ARS.</span>
+							</div>
+							<p class="my-5">
+								ARS's AI is actually what took me a year to code and rise up to a competent status.
+							</p>
+							
+								<h3>The Crunch</h3>
+								<p>
+									ARS' AI spans over 2000 lines of code. All of it deals with a wide variety of calculations and problem solving logic, from preemptive braking behavior to racer-to-racer interaction. The full behavior is, however, crunched down to three simple imputs - Throttle, Brake and Steering.
+								</p>
+								<p>
+									Nothing more. The racers are only able to interact with the car as only a human would, and do not use cheats to keep the vehicle under control or apply forces to help with the braking or conering. All they have to tame the beasts they sit on, is a steering wheel and the pedals.
+								</p>
+								<p>
+									This means the code is focused on making them as smart as possible, as they're in a level playing field with the player, and the player always wins a mind match.
+								</p>
+								<h3>Pathfinding</h3>
+								<p>
+									The racers make use of the track's info to know where to go and steer properly. They mainly use a direction vector, gotten from the track's info, and steer towards it, with a few logic here and there to help them recover from crashes and reverse properly, always attempting to right themselves into the track. Their steering is inverted when their relative angle to the track is over 90º degrees, for example, so they recover themselves in a very simple, but very efficient way.
+								</p>
+								<h3>General Speed Control</h3>
+								<p>
+									Racers start attempting to reach an 'infinite' <i>(500mph)</i> speed. The information they gather from the track and their own context limits that to a more context-appropiate speed, and after all of the checks have adjusted it, then they throttle or brake towards it.
+								</p>
+								<p>
+									The track itself, composed of 3D Vector positions, lines up creating a closed shape, and generates some information that the Racers make use of to judge their speed. <br>
+									Separated by exactly one meter, each node's direction is compared to the next and from that, an angle is generated and stored. So, for any point in the track, the Racers know the precise direction change each corner implies.
+								</p>
+								<p>
+									With that information, along their own confidence (judged from the vehicle's grip) they make up a rough ideal speed for the relevant nodes, that they attempt to keep close at if possible. This is how the AI is able to maintain a proper speed for any corner, no matter how long or complex it is.
+								</p>
+								<p>
+									A few sanity checks are in place so the Racers use some common sense, and don't blindly follow that calculated, thus theoretical, ideal cornering speed. They keep an eye on their actual position in the track and how well they're cornering, comparing their deviation from the track's center and their own traction curve compared to the angle of the current corner. A lower traction curve means they're taking a wider curve than the corner, which will likely result in them ending out of the track. As this happens, they can throttle down if they judge so.
+								</p>
+								<p>This is not enough however, as a wider traction curve means nothing if they're actually pointing towards the inside of the corner. Only when they're actively sliding away to the outside, they judge neccesary to react and slow down.</p>
+								<h3>Braking points & Gradual speed reduction</h3>
+								<p>The AI keeps track of any future corners whose ideal speed is so low, they should be braking in advance.</p>
+								<p>If such a corner is found, they will track it and keep a very fine eye on their own speed relative to that corner's ideal speed, and will slow down gradually before arriving, making sure they have enough time to actually slow down to that point</p>
+								<p>The AI doesn't slow down in a linear relationship from their speed to the corner speed based on distance - this makes them brake way too soon and its not how people attack corners. Instead, the racers opt for a more aggresive behavior, taking the bulk of the slow down at the last metters.</p>
+								<p>This  is not easy to achieve - the racer has to know the braking capabilities of his ride very well. Its not just a matter of braking power, but also grip, weight transfer, actual surface grip of the corner compared to their current grip, etcetera.</p>
+								<p>Because of this, the AI doesn't even attempt to crunch numbers and try to resolve the best speed-at-distance relationship accounting for every single variable in the enviroment. Instead, they learn the car's capabilities as they go, starting on the safe side and building up.</p>
+								<p>AI keeps an eye on how far over the corner speed they are when they arrive there, to correct any overshoot due to high aggresiveness when braking. But they also keep an eye on how well they're able to keep up with the gradual ideal speed slow down to the corner. If they're having an easy time keeping up, maybe they should brake a bit later. And that, they do.</p>
+								<p>This covers both over-shooting and under-shooting a corner and generally works in cooperation with the cornering speed analysis to maintain a coherent behavior across most contexts.</p>
+								<h3>Loss of control</h3>
+								<p>GTAV's arcadey handling makes it hard to really lose control over a vehicle, but its still there. And, more realistic handling mods (which I prefer) do make vehicle stability and controll loss a bigger part of the experience. Thus, the AI has a few tricks up its sleeve to make sure they remain in control of the machine.</p>
+								<h5>Oversteer</h5>
+								<p>Oversteer is tackled with, you guessed it, an appropiate countersteer maneuver. The AI has a rough idea of what oversteer is - in their eyes, oversteer is the moment when the car is rotating faster than they want it to.</p>
+								<p>Depending on the difference between what rotation speed they want and what they experience, they can sightly steer a bit less, all the way up to a full 180º steering wheel countersteer to the other side. As soon as the oversteer check judges there isn't oversteer anymore, the AI stops trying.</p>
+								<h5>Understeer</h5>
+								<p>Understeer implies that the car is not following the steer input. This is judged over a period of time. If the AI notices this, they will throttle down.</p>
+								<h5>Side Slide</h5>
+								<p>A vehicle sliding is a cool sight, but its not really a sign of stability. The AI doesn't actively try to stop a slide (and they'll happily drift an entire corner if it does the job), but they do attempt to prevent it from going worse if they notice they're in one. </p>
+								<p>Counter-Oversteer behavior and Slide behavior are tied, because a slide might come from an oversteer moment. Thus, the slide is usually caught by the above behavior, then handled by this one.</p>
+					
+						
 					</div>
 					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
+						<div class="text-center pt-5 mb-5 mt-5">
+							<h1 class="">The Vehicles</h1>
+							<span>Not yet.</span>
+						</div>
 					</div>
 					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-						<p>Lorem ipsum dolor sit amet consectetur adipiscing elit nisi dapibus, auctor mi tristique enim nulla pellentesque fringilla turpis nascetur, nostra odio vel pretium tortor accumsan donec tempus. Est feugiat eleifend dignissim lacinia aenean curabitur, sed augue fringilla commodo habitasse nam, quis pellentesque venenatis interdum bibendum. Euismod quisque maecenas dui eu lacinia placerat pulvinar habitant ornare, tellus torquent senectus sollicitudin hac a semper donec, dictum interdum viverra non cubilia fringilla magna consequat.</p>
+						<div class="text-center pt-5 mb-5 mt-5">
+							<h1 class="">Settings</h1>
+							<span>Options.ini and DevSettings.ini help you tailor the experience.</span>
+						</div>
+						<p>Inside the ARS folder you will find <code>Options.ini</code> and <code>DevSettings.ini</code>. These two files deal with global settings and allow players and advanced users to configure the script to their liking.</p>
+						<ul>
+							<li><strong> Options.ini </strong> deals with player oriented options, like the default disciplines number of laps and toggles for Ghosting and Traffic. Also allows to enable advanced menu options, like Debug mode, or the ability to save vehicles.</li>
+							<li><strong> DevSettings.ini </strong> deals with advanced settings like AI behavior, default Track Creator settings, script auto-load and Logging details.</li>
+						</ul>
 					</div>
 				</div>
 			</div>
