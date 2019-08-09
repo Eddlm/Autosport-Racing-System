@@ -42,6 +42,7 @@
 				<div class="nav flex-column nav-pills col-md-2 d-none d-md-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 					<a class="nav-link active show" id="v-pills-home-tab" data-toggle="pill" href="#main-menu" role="tab" aria-controls="v-pills-home" aria-selected="true">Main Menu</a>
 					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#in-the-race" role="tab" aria-controls="v-pills-profile" aria-selected="false">In the race</a>
+					<a class="nav-link" id="v-pills-vehs-tab" data-toggle="pill" href="#adding-vehicles" role="tab" aria-controls="v-pills-messages" aria-selected="false">Adding Vehicles</a>
 					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#track-creator" role="tab" aria-controls="v-pills-messages" aria-selected="false">Track Creator</a>
 					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#track-tweaks" role="tab" aria-controls="v-pills-settings" aria-selected="false">Track Tweaks</a>
 				</div>
@@ -89,7 +90,23 @@
 								</p>
 								<p>There are no rules to abide by, as long as you follow the track so ARS can track your position properly, you're golden. While ARS currently does not have a fleshed out GUI, and so, knowing where to go may not be ovbious, all tracks will have objects to the side of the track guiding you. It should not be hard to know the way.</p>
 								<p>The racers will attempt to be as respectful as possible without giving way. You can follow suit or you can not, there are no rules against contact implemented yet.</p>
+
+								<h4 class="text-center">Rewards</h4>
+								<p>ARS' reward system generates a prize based on the number of vehicles in the race and how long the track is. The winner will get the money.</p>
 							</article>
+						</div>
+						<div class="tab-pane fade" id="adding-vehicles" role="tabpanel" aria-labelledby="v-pills-vehs-tab">
+							<section class="mb-5">
+								<div class="text-center pt-5 mb-5">
+									<h1 class="">Adding vehicles</h1>
+									<span>You can add new vehicles to ARS to summon in the races.</span>
+								</div>
+								
+								<article class="w-100 mx-auto">
+									<p>There are two ways to add a new vehicle. While sitting on it, you can either open the ingame cheat prompt <code>º or ´</code> and enter '<strong>arssavecar</strong>', then follow the instructions.</p>
+									<p>If you enable <code>Advanced Options</code> in <strong>ARS/Options.ini</strong>, a new menu item will appear in ARS' main menu, prompting you to save your current car too.</p>
+								</article>
+							</section>
 						</div>
 						<div class="tab-pane fade" id="track-creator" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 							<section class="mb-5">
@@ -100,6 +117,7 @@
 								
 								<article class="w-100 mx-auto">
 									<p>The <strong>Track Creator</strong> is a tool that allows you to generate standalone routes, where you and other AI Racers can race later.</p>
+									<p>To be able to access the Track Creator, you have to enable <code>AdvancedOptions</code> in ARS/Options.ini. Then, it will appear as one of the menu items in the main ARS menu.</p>
 
 									<p>Its usage should be very intuitive, you'll have instructions on screen. As soon as you open it, you'll be prompted to place a starting point for the track. You have to define how wide the starting point will be and where it points to, easy stuff.</p>
 									<p>Next, it is really matter of navigating around with the Drone Camera and adding sections to the track until you are finished.</p>
