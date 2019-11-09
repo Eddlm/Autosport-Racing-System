@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  </head>
+
+  <body class="m-5"> 
+    <div class="text-center">
+      <H1>Handling info</H1>
+	  <h4>Visual representation mockup</h4>
+	  
+        <hr class="bg-info ">
+    </div>
+    <article class="row">
+      
+      <div class="col-md-4">
+      <div class="text-center">
+        
+        <canvas id="myChart" width="100" height="100"></canvas>
+      </div>
+      </div>
+      <hr>
+      <div class="col-md-8">
+        <h3 class="text-center">Handling Comparison</h3>
+<canvas id="radar" class="chart chart-radar"
+  chart-data="data" chart-options="options" chart-labels="labels">
+</canvas> 
+      </div>
+    </article>
+  </body>
+
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['CW19', 'ZR250 T/A', "Hyperion"],
+        datasets: [
+          {
+            label: 'Top Speed (mph)',
+            data: [120, 113, 125],
+            backgroundColor: [
+              'rgba(255, 99, 132, 0.2)',
+              'rgba(54, 162, 235, 0.2)',
+              'rgba(255, 206, 86, 0.2)',
+            ],
+            borderColor: [
+              'rgba(255, 99, 132, 1)',
+              'rgba(54, 162, 235, 1)',
+              'rgba(255, 206, 86, 1)',
+            ],
+            borderWidth: 1,
+          },
+        ],
+      },
+      options: {
+        scales: {
+          yAxes: [
+            {
+              ticks: {
+                beginAtZero: true,
+              },
+            },
+          ],
+        },
+      },
+    });
+
+var ctx = document.getElementById('radar').getContext('2d');
+var marksData = {
+  labels: ["Engine power", "Brake power", "Top Speed", "Grip", "Downforce", "Gearing"],
+  datasets: [
+
+    {    
+    label: "Reference",
+    backgroundColor: "rgba(0,0,0,0.0)",
+    data: [0, 0, 0, 0, 0, 0]
+  },
+    {    
+    label: "Kuruma MKll",
+    backgroundColor: "rgba(200,0,0,0.05)",
+    data: [75, 100, 65, 100, 100, 100]
+  }, {
+    label: "Hyperion",
+    backgroundColor: "rgba(0,0,200,0.05)",
+    data: [70, 95, 80, 90, 90, 85]
+  }]
+};
+ 
+var radarChart = new Chart(ctx, {
+  type: 'radar',
+  data: marksData
+});
+
+  </script>
+</html>
